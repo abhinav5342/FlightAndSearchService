@@ -22,6 +22,11 @@
   }
 
    ```
+   
+  -Now once db-config is done , we can now go to terminal and in 
+   `src folder` do : 
+  `npx sequelize db:create`
+
    <!-- -src/
        index.js //server
        models/
