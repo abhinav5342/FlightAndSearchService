@@ -13,6 +13,6 @@ const setupAndStartServer = async ()=> {
         console.log(`server started at ${PORT}`);
         // console.log(process.env);
      }); 
-}
+}  
 
 setupAndStartServer();
