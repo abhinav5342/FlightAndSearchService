@@ -2,7 +2,7 @@
 
    ## Project Setup
    
-   -clone the project o your local
+   -clone the project on your local
    
    -execute `npm install` on the same path of as of root directory 
      of the downloaded project
