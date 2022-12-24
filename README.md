@@ -27,6 +27,15 @@
    `src folder` do : 
   `npx sequelize db:create`
 
+  -DB Design:
+    -we need to decide number of tables required for the databases to be functional at optimal level
+    
+    -Airplane table
+    -Airport
+    -Flight
+    -city
+     
+
    <!-- -src/
        index.js //server
        models/
