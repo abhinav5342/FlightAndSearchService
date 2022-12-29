@@ -26,9 +26,12 @@
   -Now once db-config is done , we can now go to terminal and in 
    `src folder` do : 
   `npx sequelize db:create`
+  Now execute
+  `npx sequelize db:migrate`
 
   -DB Design:
-    -we need to decide number of tables required for the databases to be functional at optimal level
+    -we need to decide number of tables required for the 
+     databases to be functional at optimal level
     
     -Airplane table
     -Airport
