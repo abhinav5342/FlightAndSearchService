@@ -69,7 +69,7 @@ const update = async (req,res) => {
     return res.status(200).json({
      data:response,
      success:true,
-     message:"successfully updated the city",
+     message:"successfully fetched the city",
      err:{}
     });
    } catch (error) {
@@ -87,5 +87,5 @@ module.exports = {
     create,
     destroy,
     get,
-    update
+    update,
 }
