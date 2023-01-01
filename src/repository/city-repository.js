@@ -1,35 +1,6 @@
 const { City } = require('../models/index');
 
-// class CityRepository{
-//     async createCity({ name }){
-//         try{
-//             const City = await City.create({ name });
-//             return city;
-//         }
-//         catch(error){
-//             throw {error};
-//         }
-//     }
-    
-//     async deleteCity(cityId){
-//         try{
-//            await City.destroy({
-//             where:{
-//                 id:cityId,
-//             }
-//            })
-//         }catch(error) {
-//            throw {error};
-//         }
-//     }
-// }
-
-
 class CityRepository{
-
-    // constructor(obj){
-
-    // }
 
    async createCity({ name }){
     try {
