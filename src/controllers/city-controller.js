@@ -34,7 +34,7 @@ const destroy = async (req,res) => {
        });
    } catch (error) {
        console.log(error);
-       return res.status(200).json({
+       return res.status(500).json({
         data:{},
         success:false,
         message:"Not able to delete city",
@@ -49,7 +49,7 @@ const get = async (req,res) => {
     return res.status(200).json({
      data:response,
      success:true,
-     message:"successfully fetched the city",
+     message:'successfully fetched the city',
      err:{}
     });
   } catch (error) {
