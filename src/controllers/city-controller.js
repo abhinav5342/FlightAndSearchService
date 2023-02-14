@@ -2,6 +2,9 @@ const { CityService } = require('../services/index');
 
 const cityService = new CityService();
 
+/* POST request will be used for creating new data */
+/*data-> req.body */
+
 const create = async (req,res) => {
     try {
         const city = await cityService.createCity(req.body);
@@ -22,7 +25,7 @@ const create = async (req,res) => {
     }
 
 }
-
+// DELETE -> /city/:id
 const destroy = async (req,res) => {
    try {
        const response = await cityService.deleteCity(req.params.id);
@@ -30,7 +33,7 @@ const destroy = async (req,res) => {
         data: response,
         success: true,
         message:'succcessfully deleted city',
-        err: {} 
+        err: {}
        });
    } catch (error) {
        console.log(error);
@@ -42,6 +45,7 @@ const destroy = async (req,res) => {
        });
    }
 }
+// GET -> /city/:id
 
 const get = async (req,res) => {
   try {
@@ -63,6 +67,7 @@ const get = async (req,res) => {
   }
 }
 
+// PATCH -> /city/:id -> req.body
 const update = async (req,res) => {
    try {
     const response = await cityService.updateCity(req.params.id ,req.body);
